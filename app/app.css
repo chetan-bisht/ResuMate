@@ -79,6 +79,12 @@ form {
   .auth-button {
     @apply primary-gradient rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white;
   }
+  .unique-gradient-border {
+    @apply bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 p-6 rounded-3xl;
+  }
+  .unique-auth-button {
+    @apply bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-600 rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
   .main-section {
     @apply flex flex-col items-center gap-8 pt-12 max-sm:mx-2 mx-15 pb-5;
   }
