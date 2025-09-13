@@ -1,3 +1,5 @@
+declare module 'pdfjs-dist/build/pdf.mjs';
+
 interface Job {
   title: string;
   description: string;
