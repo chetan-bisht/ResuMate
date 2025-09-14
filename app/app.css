@@ -256,6 +256,65 @@ form {
     background-size: 600px 600px;
     background-attachment: fixed;
   }
+
+  .modern-accordion-item {
+    @apply bg-gradient-to-r from-white via-gray-50 to-white border border-gray-200/50 rounded-xl shadow-sm hover:shadow-lg hover:border-indigo-300/50 transition-all duration-300 backdrop-blur-sm;
+  }
+
+  .modern-accordion-header {
+    @apply bg-gradient-to-r from-indigo-50/30 via-purple-50/30 to-pink-50/30 hover:from-indigo-100/50 hover:via-purple-100/50 hover:to-pink-100/50 transition-all duration-300 rounded-t-xl;
+  }
+
+  .modern-accordion-content {
+    @apply bg-gradient-to-b from-gray-50/50 to-white/80 backdrop-blur-sm;
+  }
+
+  .modern-ats-card {
+    @apply bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/30 border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 backdrop-blur-lg;
+    background-image:
+      radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+  }
+
+  .modern-details-tip {
+    @apply bg-gradient-to-r from-green-50/80 via-emerald-50/80 to-teal-50/80 border border-green-200/50 hover:border-green-300/70 transition-all duration-300 backdrop-blur-sm shadow-sm hover:shadow-md;
+  }
+
+  .modern-details-tip-improve {
+    @apply bg-gradient-to-r from-yellow-50/80 via-amber-50/80 to-orange-50/80 border border-yellow-200/50 hover:border-yellow-300/70 transition-all duration-300 backdrop-blur-sm shadow-sm hover:shadow-md;
+  }
+
+  .modern-score-gauge {
+    @apply drop-shadow-lg;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.1));
+  }
+
+  .modern-score-badge {
+    @apply bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
+  }
+
+  .modern-score-badge-good {
+    @apply bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
+  }
+
+  .modern-score-badge-bad {
+    @apply bg-gradient-to-r from-red-400 via-pink-500 to-rose-500 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
+  }
+
+  .modern-summary-card {
+    @apply bg-gradient-to-br from-white via-violet-50/30 to-purple-50/30 border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 backdrop-blur-lg;
+    background-image:
+      radial-gradient(circle at 30% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 70% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+  }
+
+  .modern-category-header {
+    @apply bg-gradient-to-r from-indigo-100/50 via-purple-100/50 to-pink-100/50 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .modern-tip-grid {
+    @apply bg-gradient-to-br from-gray-50/80 via-blue-50/60 to-indigo-50/80 rounded-xl shadow-inner backdrop-blur-sm;
+  }
 }
 
 @utility bg-gradient {
@@ -312,7 +371,11 @@ form {
   animation: fadeIn 1.5s ease-out;
 }
 
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
 @keyframes shine {
-  0% { left: -75%; }
-  100% { left: 125%; }
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  100% { transform: translateX(200%) skewX(-15deg); }
 }
