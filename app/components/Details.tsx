@@ -50,7 +50,7 @@ const CategoryContent = ({
                            }: {
     tips: { type: "good" | "improve"; tip: string; explanation: string }[];
   }) => {
-    // Limit tips to maximum 4 for consistent sizing
+    
     const limitedTips = tips.slice(0, 4);
 
     return (

@@ -63,7 +63,7 @@ const Resume = () => {
         <main className="!pt-0">
             <nav className="resume-nav relative">
                 <Link to="/" className="group flex flex-row items-center gap-3 bg-white/90 backdrop-blur-sm border border-gray-200/50 rounded-xl px-4 py-3 shadow-lg hover:shadow-xl hover:border-indigo-300/50 transition-all duration-300 hover:scale-[1.02] hover:bg-white relative overflow-hidden">
-                    {/* Subtle background animation */}
+                    
                     <div className="absolute inset-0 bg-gradient-to-r from-indigo-50/0 via-purple-50/50 to-pink-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                     <div className="p-1.5 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 group-hover:from-indigo-200 group-hover:to-purple-200 transition-all duration-300 relative z-10">
@@ -71,11 +71,11 @@ const Resume = () => {
                     </div>
                     <span className="text-gray-700 text-sm font-semibold group-hover:text-indigo-700 transition-colors duration-300 relative z-10">Back to Homepage</span>
 
-                    {/* Shine effect */}
+                   
                     <div className="absolute inset-0 -top-1 -left-1 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 group-hover:animate-shine"></div>
                 </Link>
 
-                {/* Floating particles effect */}
+                
                 <div className="absolute -top-2 -right-2 w-2 h-2 bg-indigo-400 rounded-full opacity-60 animate-pulse"></div>
                 <div className="absolute -bottom-1 -left-3 w-1.5 h-1.5 bg-purple-400 rounded-full opacity-40 animate-pulse animation-delay-1000"></div>
             </nav>
@@ -94,13 +94,13 @@ const Resume = () => {
                     )}
                 </section>
                 <section className="feedback-section">
-                    {/* Enhanced Resume Review Header */}
+                    
                     <div className="relative mb-8 group">
                         {/* Background decorative elements */}
                         <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700"></div>
                         <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-gradient-to-tl from-pink-200/30 to-rose-200/30 rounded-full blur-lg group-hover:scale-110 transition-transform duration-500"></div>
 
-                        {/* Main header */}
+                        
                         <div className="relative z-10 text-center">
                             <div className="inline-flex items-center gap-4 mb-3">
                                 <div className="p-3 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-xl animate-pulse">
@@ -113,7 +113,7 @@ const Resume = () => {
                                 </h2>
                             </div>
 
-                            {/* Subtitle with animated underline */}
+                            
                             <div className="relative inline-block">
                                 <p className="text-lg text-gray-600 font-medium">
                                     Comprehensive analysis of your resume's performance
@@ -122,7 +122,7 @@ const Resume = () => {
                             </div>
                         </div>
 
-                        {/* Floating particles */}
+                        
                         <div className="absolute top-2 right-8 w-2 h-2 bg-indigo-400 rounded-full opacity-60 animate-bounce"></div>
                         <div className="absolute bottom-4 left-12 w-1.5 h-1.5 bg-purple-400 rounded-full opacity-40 animate-ping"></div>
                         <div className="absolute top-8 left-1/4 w-1 h-1 bg-pink-400 rounded-full opacity-50 animate-pulse"></div>
