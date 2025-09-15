@@ -1,87 +1,62 @@
-# Welcome to React Router!
+# ✨ ResuMate – AI-Powered Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+ResuMate is an **AI-powered Resume Analyzer** built with React, React Router, and Puter.js.  
+It allows users to seamlessly upload resumes, get **ATS scores**, highlight correct and incorrect sections, and receive actionable improvement suggestions.
 
 ---
 
-Built with ❤️ using React Router.
+## ⚙️ Tech Stack
+
+- React
+- React Router v7
+- Puter.com & Puter.js
+- Tailwind CSS
+- TypeScript
+- Vite
+- Zustand
+
+---
+
+## 🔋 App Features
+
+- **Seamless Authentication** – Users can sign up and log in entirely in the browser using Puter.js.
+- **Resume Upload & Storage** – Safely upload and manage all resumes.
+- **AI-Powered Resume Analysis** – Automatically evaluate resumes and provide ATS scores.
+- **Correct & Incorrect Resume Sections** – Highlights strengths and areas to improve.
+- **Improvement Suggestions** – Personalized tips to enhance resume quality.
+- **Resume Summary & Recent Analysis** – Quick overview on the home page.
+- **Responsive & Modern UI** – Works on all devices with reusable, maintainable components.
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](public/screenshots/home.png)
+
+### Resume Input / Upload
+
+![Resume Input](public/screenshots/input.png)
+
+### Analysis Result
+
+![Result Page](public/screenshots/result.png)
+
+### Demo of Working App
+
+## ![Demo](public/screenshots/resume_analyzer_demo.gif)
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/ResuMate.git
+cd ResuMate
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
